@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 .btn {
   background: linear-gradient(
     92.23deg,
@@ -32,12 +36,26 @@
     #b936ee 100%,
     #ff56f6 117.04%
   );
+  animation-name: animate;
+  animation-duration: .3s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
 }
 
 .active {
   color: #fff;
-  padding: 1rem;
+  display: grid;
   border-radius: 100%;
+  place-items: center;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @layer base {
@@ -68,4 +86,9 @@
   .section {
     @apply py-8 lg:py-24 lg:h-screen flex items-center;
   }
+}
+
+
+.logo {
+  width: 120px;
 }
