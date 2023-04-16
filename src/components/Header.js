@@ -6,7 +6,7 @@ const Header = () => {
   return <header id='home' className='py-8 '>
     <div className="container mx-auto">
       <div className='flex justify-between items-center'>
-        <a href='#'>
+        <a href='/#'>
           <img src={logo} className="logo" alt='umidjon' />
         </a>
 
@@ -15,9 +15,6 @@ const Header = () => {
       </div>
     </div>
   </header>;
-
-
-
 };
 
 export default Header;
