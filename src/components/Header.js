@@ -3,7 +3,7 @@ import React from 'react';
 import logo from '../assets/umideev.png'
 
 const Header = () => {
-  return <header id='home' className='py-8 '>
+  return <header className='py-8 '>
     <div className="container mx-auto">
       <div className='flex justify-between items-center'>
         <a href='/#'>
